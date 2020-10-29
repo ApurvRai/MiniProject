@@ -16,18 +16,19 @@ body {
   background-color: #f3eee3;
   width           : 100vw;
   height          : 100vh;
+  overflow-x      : hidden;
 }
 
 header {
   padding          : 12px;
-  display          :box;
-  display          : flexbox;
+  display          : -webkit-box;
+  display          : -ms-flexbox;
   display          : flex;
- box-align: center;
-  flex-align   : center;
+  -webkit-box-align: center;
+  -ms-flex-align   : center;
   align-items      : center;
- box-pack : space-evenly;
- flex-pack    : space-evenly;
+  -webkit-box-pack : space-evenly;
+  -ms-flex-pack    : space-evenly;
   justify-content  : space-evenly;
   margin-bottom    : 20px;
 }
@@ -46,8 +47,8 @@ header .description {
 }
 
 header .scoreboard {
-  width           :max-content;
-  width           : max-content;
+  width           : -webkit-max-content;
+  width           : -moz-max-content;
   width           : max-content;
   height          : 100%;
   background-color: #776E65;
@@ -71,8 +72,8 @@ main {
   width           : auto;
   height          : auto;
   position        : relative;
-  display         :box;
-  display         :flexbox;
+  display         : -webkit-box;
+  display         : -ms-flexbox;
   display         : flex;
   -webkit-box-pack: center;
   -ms-flex-pack   : center;
